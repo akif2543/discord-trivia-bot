@@ -6,7 +6,7 @@ const Fuse = require("fuse.js");
 const client = new Discord.Client();
 client.login(process.env.DISCORD_TOKEN);
 
-const url = `${process.env.DOMAIN}${process.env.PORT}`;
+const url = `${process.env.DOMAIN}`;
 const prefix = "!";
 const answer_prefix = "?";
 const current = new Map();
