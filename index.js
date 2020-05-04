@@ -177,7 +177,7 @@ const getLeader = async (message) => {
   try {
     const response = await fetch(`${url}${path}`);
     let json = await response.json();
-    if (!json) {
+    if (!json.length) {
       return message.channel.send("The leaderboard is currently empty!");
     }
     let board = "";
