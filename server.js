@@ -8,7 +8,7 @@ require("dotenv").config();
 const playerRoutes = require("./routes/players");
 const questionRoutes = require("./routes/questions");
 
-const db = process.env.MONGO_URL;
+const db = process.env.MONGODB_URI;
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
