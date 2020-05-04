@@ -4,7 +4,7 @@
   "description": "Discord trivia bot",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "bot": "node index.js",
     "seed": "node db/seed.js"
   },
@@ -24,7 +24,6 @@
     "mongoose-seed": "^0.6.0",
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.0",
-    "nodemon": "^2.0.3",
-    "pg": "^8.0.3"
+    "nodemon": "^2.0.3"
   }
 }
